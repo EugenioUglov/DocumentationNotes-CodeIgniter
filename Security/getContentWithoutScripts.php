@@ -1,0 +1,1 @@
+$content_without_scripts = $this->security->xss_clean($content);

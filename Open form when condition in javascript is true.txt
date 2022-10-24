@@ -1,0 +1,10 @@
+<php>
+$data = array('onsubmit' => 'return is_open_form();');
+echo form_open('new_form', $data);
+</php>
+
+<script>
+function is_open_form() {
+  return true;
+}
+</script>

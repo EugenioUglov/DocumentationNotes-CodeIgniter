@@ -1,0 +1,20 @@
+1 Way
+Get data from input field.
+
+HTML of first page.
+<input type="hidden" name="input-field-name" value='<?php echo $data ?>'>   
+
+PHP of second page.
+Get data by input field name.
+$token = $this->input->post('input-field-name');
+
+========================================
+
+2 Way
+Url.
+
+PHP of first page.
+$this->load->view('password_forgot_test', array("data" => $data));
+
+PHP of second page.
+$data = $this->input->get('data');

@@ -14,7 +14,12 @@ $token = $this->input->post('input-field-name');
 Url.
 
 PHP of first page.
-$this->load->view('password_forgot_test', array("data" => $data));
+<a href="'.base_url('classname/functionname'.'?data='.$dataToSend).'">Send data by url</a>
 
 PHP of second page.
 $data = $this->input->get('data');
+
+
+Relatives:
+1. Get url parameters
+https://github.com/EugenioUglov/DocumentationNotes-CodeIgniter/blob/main/Get%20url%20parameters.txt

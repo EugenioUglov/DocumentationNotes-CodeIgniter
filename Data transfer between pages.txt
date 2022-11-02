@@ -22,6 +22,7 @@ $data = $this->input->get('data');
 ========================================
 
 3 Way
+Url.
 
 PHP of first page.
 $this->load->view('class_view', array("data"=>$data_to_send));

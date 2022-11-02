@@ -14,10 +14,20 @@ $token = $this->input->post('input-field-name');
 Url.
 
 PHP of first page.
-<a href="'.base_url('classname/functionname'.'?data='.$dataToSend).'">Send data by url</a>
+<a href="'.base_url('classname/functionname'.'?data='.$data_to_send).'">Send data by url</a>
 
 PHP of second page.
 $data = $this->input->get('data');
+
+========================================
+
+3 Way
+
+PHP of first page.
+$this->load->view('class_view', array("data"=>$data_to_send));
+
+PHP of second page.
+echo $data;
 
 
 Relatives:
